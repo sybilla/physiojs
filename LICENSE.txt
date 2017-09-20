@@ -1,0 +1,7 @@
+This is the repository for physiojs, a library for reading/writing time-series psychophysiological data in human readable, json-based format
+ by Sybilla Technologies, sp. z o.o.
+
+The library is available under different licenses depending on whether it is intended for commercial/government use, or for a personal or non-profit project.
+
+- Commercial/governmnent: please contact us via info@sybillatechnologies.com
+- Personal or non-profit: MIT (https://opensource.org/licenses/MIT)
