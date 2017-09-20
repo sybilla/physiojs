@@ -1,1 +1,1 @@
-export {ArrayConverter} from './utils/ArrayConverter';
+export {PhysioDocument} from './data/PhysioDocument';
