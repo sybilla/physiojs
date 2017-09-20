@@ -9,7 +9,7 @@ export class Metadata {
     }
 
     public static fromDTO(obj:Object) {
-        return new this(
+        return new Metadata(
             obj["SetupName"], 
             obj["FormatVersion"], 
             obj["AdditionalData"],

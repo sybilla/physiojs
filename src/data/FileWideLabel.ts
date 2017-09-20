@@ -6,6 +6,6 @@ export class FileWideLabel {
     }
 
     public static fromDTO(obj: Object) {
-        return new this(obj["Position"], obj["Type"], obj["Description"]);
+        return new FileWideLabel(obj["Position"], obj["Type"], obj["Description"]);
     }
 }

@@ -14,7 +14,7 @@ export class Series {
     }
 
     public static fromDTO(obj:Object) {
-        return new this(
+        return new Series(
             obj["Id"], 
             obj["Name"], 
             (obj["ColumnDefinitions"] as Object[]).map(ColumnDefinition.fromDTO),

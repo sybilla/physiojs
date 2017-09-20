@@ -3,6 +3,6 @@ export class ColumnDefinition {
     }
 
     public static fromDTO(obj: Object) {
-        return new this(obj["Name"],obj["Unit"], obj["Description"]);
+        return new ColumnDefinition(obj["Name"],obj["Unit"], obj["Description"]);
     }
 }

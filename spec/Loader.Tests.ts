@@ -10,7 +10,6 @@ var fs = require('fs');
 describe("loader", () => {
 
     it("Loads sample file", () => {
-        
         expect(4).to.be.equal(4);
     });
 });

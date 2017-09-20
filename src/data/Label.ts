@@ -6,6 +6,6 @@ export class Label {
     }
 
     public static fromDTO(obj: Object) {
-        return new this(obj["Position"], obj["Type"], obj["Description"]);
+        return new Label(obj["Position"], obj["Type"], obj["Description"]);
     }
 }

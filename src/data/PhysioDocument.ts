@@ -9,8 +9,8 @@ export class PhysioDocument {
 
     constructor(data: string) {
         var obj = JSON.parse(data);
-        this.metadata  = Metadata.fromDTO(data["Metadata"]);
-        this.fileWideLabels = (data["FileWideLabels"] as Object[]).map(FileWideLabel.fromDTO);
-        this.series = (data["Series"] as Object[]).map(Series.fromDTO);
+        this.metadata  = Metadata.fromDTO(obj["Metadata"]);
+        this.fileWideLabels = (obj["FileWideLabels"] as Object[]).map(FileWideLabel.fromDTO);
+        this.series = (obj["Series"] as Object[]).map(Series.fromDTO);
     }
 }

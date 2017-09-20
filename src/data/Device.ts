@@ -3,6 +3,6 @@ export class Device {
     }
 
     public static fromDTO(obj: Object) {
-        return new this(obj["Id"], obj["Name"], obj["Sensor"], obj["Channel"]);
+        return new Device(obj["Id"], obj["Name"], obj["Sensor"], obj["Channel"]);
     }
 }
