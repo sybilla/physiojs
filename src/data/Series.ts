@@ -25,7 +25,7 @@ export class Series {
         );
     }
 
-    getSeries(i:number) : any[][] {
+    getFormatted() : any[][] {
         var t = this.startTime.getTime();
         return this.data.map(x=> {
             var y = x.slice() as any[];
