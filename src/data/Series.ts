@@ -30,6 +30,11 @@ export class Series {
         return this.data.map(x=> {
             var y = x.slice() as any[];
             y[0] = new Date(t + x[0] * 1000);
+            for (var i =1;i<y.length;i++) {
+                if (y[i] == "NaN") {
+                    y[i] = Number.NaN;
+                }
+             }
             return y;
         });
     }
