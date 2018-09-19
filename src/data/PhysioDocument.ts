@@ -13,6 +13,6 @@ export class PhysioDocument {
         this.refTime = new Date(obj["ReferenceTime"]);
         this.metadata  = Metadata.fromDTO(obj["Metadata"]);
         this.fileWideLabels = (obj["FileWideLabels"] as Object[]).map(FileWideLabel.fromDTO);
-        this.series = (obj["Series"] as Object[]).map(x => Series.fromDTO(x, this.refTime);
+        this.series = (obj["Series"] as Object[]).map(x => Series.fromDTO(x, this.refTime));
     }
 }
