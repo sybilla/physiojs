@@ -13,13 +13,13 @@ export class Series {
         public device: Device) {
     }
 
-    public static fromDTO(obj:Object) {
+    public static fromDTO(obj:Object, refTime: Date) {
         return new Series(
             obj["Id"], 
             obj["Name"], 
             (obj["ColumnDefinitions"] as Object[]).map(ColumnDefinition.fromDTO),
             (obj["Labels"] as Object[]).map(Label.fromDTO),
-            new Date(obj["StartTime"]),
+            refTime,
             obj["Data"],
             Device.fromDTO(obj["Device"])
         );
