@@ -1,6 +1,6 @@
 {
   "name": "physiojs",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Package for reading/writing time-series psychophysiological data in human readable, json-based format",
   "scripts": {
     "lint_src": "tslint -c tslint.json src/*.ts src/**/*.ts src/**/**/*.ts",
@@ -66,6 +66,8 @@
   "typings": "./dist/cjs/physiojs.d.ts",
   "dependencies": {
     "es6-promise": "^3.1.2",
+    "ncp": "^2.0.0",
+    "typings": "^2.1.1",
     "uuid": "^3.1.0"
   }
 }
