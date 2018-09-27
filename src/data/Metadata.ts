@@ -5,7 +5,8 @@ export class Metadata {
         public additionalData: Object,
         public id: string,
         public timestamp: Date,
-        public setupId: string) {
+        public setupId: string,
+        public additionalDataDescriptors: Object ) {
     }
 
     public static fromDTO(obj:Object) {
@@ -15,6 +16,7 @@ export class Metadata {
             obj["AdditionalData"],
             obj["SetupName"], 
             new Date(obj["Timestamp"]), 
-            obj["SetupId"]);
+            obj["SetupId"],
+            obj["AdditionalDataDescriptors"]);
     }
 }
