@@ -3,7 +3,7 @@ export class ColumnDefinition {
         public name:string, 
         public unit: string, 
         public description:string,
-        public tranformation: object) {
+        public tranformation: Object) {
     }
 
     public static fromDTO(obj: Object) {
