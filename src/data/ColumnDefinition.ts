@@ -9,7 +9,7 @@ export class ColumnDefinition {
     public static fromDTO(obj: Object) {
         return new ColumnDefinition(
             obj["Name"],
-            obj["Unit"], 
+            obj["Unit"].toString == '?S' ? 'μS' : obj["Unit"], 
             obj["Description"],
             obj["Transformation"]);
     }
