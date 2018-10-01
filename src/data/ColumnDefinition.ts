@@ -7,7 +7,7 @@ export class ColumnDefinition {
     }
 
     public static fromDTO(obj: Object) {
-        let formattedUnit = null;
+        let formattedUnit: string = null;
         if (obj["Unit"])
             formattedUnit = obj["Unit"].toString == '?S' ? 'μS' : obj["Unit"];
         return new ColumnDefinition(
